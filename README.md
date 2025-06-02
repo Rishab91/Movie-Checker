@@ -1,12 +1,49 @@
+
 # Movie_Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Movie_Checker** is a simple and fast React app to search for movies using The Movie Database (TMDb) API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+Follow these steps to get the app running locally:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/Movie_Checker.git
+cd Movie_Checker
+```
+
+### 2. Create a `.env` file
+
+In the project root directory, create a `.env` file to store your environment variables.
+
+### 3. Get your TMDb API key
+
+- Sign up or log in to [The Movie Database (TMDb)](https://www.themoviedb.org/).
+- Navigate to your account settings and get your API key.
+
+### 4. Add your API key to the `.env` file
+
+Add the following line to your `.env` file:
+
+```ini
+VITE_API_KEY=your_tmdb_api_key_here
+```
+
+Replace `your_tmdb_api_key_here` with the actual API key you obtained.
+
+### 5. Install dependencies and start the development server
+
+```bash
+npm install
+npm run dev
+```
+
+### 6. Open your browser
+
+Visit `http://localhost:5173` (or the URL shown in the terminal) to start searching for movies!
+
+---
